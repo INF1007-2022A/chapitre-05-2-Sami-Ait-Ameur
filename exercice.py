@@ -7,7 +7,13 @@ def get_bill(name, data):
 	INDEX_NAME = 0
 	INDEX_QUANTITY = 1
 	INDEX_PRICE = 2
-
+	s = 0
+	print(name)
+	for i in data:
+		s += i[1] * i[2]
+	print('SOUS TOTAL', s)
+	print('TAXES', s*0.15)
+	print('TOTAL', s*1.15)
 	return ""
 
 
